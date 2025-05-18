@@ -1,0 +1,137 @@
+#logout-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--primary);
+    color: var(--surface);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#logout-button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+#logout-button:active {
+    transform: scale(0.95);
+}
+
+.form-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 2rem 1rem;
+    background-color: #f5f7fa;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.form-card label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-card input,
+.form-card button {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.form-card button {
+    margin-top: 1.25rem;
+    padding: 0.85rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.form-card button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 16px rgba(0, 86, 179, 0.4);
+}
+
+.form-card p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666;
+}
+
+.form-card p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-card p a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    width: 100%;
+    max-width: 480px;
+    background-color: #fff5f5;
+    color: #c62828;
+    border: 1px solid #f8d7da;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 2px 8px rgba(198, 40, 40, 0.1);
+}
+
+@media (max-width: 500px) {
+    .form-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .form-card h1 {
+        font-size: 1.5rem;
+    } 
+}
